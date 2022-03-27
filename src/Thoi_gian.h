@@ -1,8 +1,8 @@
-#include <bits/stdc++.h>
-using namespace std;
+#ifndef THOIGIAN_H
+#define THOIGIAN_H
 
 class Thoi_gian {
-	
+
 	protected:
 		time_t t;
 		string thoi_Gian; 
@@ -66,12 +66,5 @@ class Thoi_gian {
     		
 		}
 };
-  
-  
-int main (){
-	Thoi_gian time1;
-	Thoi_gian time2;
-	cout << time1.set_Thoi_Gian("01:00:00") << endl;
-	cout << time2.set_Thoi_Gian("00:55:00") << endl;
-	cout << time1.khoang_Thoi_Gian(time1, time2);
-}
+
+#endif
