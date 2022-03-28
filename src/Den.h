@@ -24,7 +24,7 @@ class Den {
 		}
 		
 		void setThoi_Gian_Sang(int thoi_Gian_Sang_Moi) {
-			this.thoiGianSang = thoiGianSang;
+			this.thoi_Gian_Sang = thoi_Gian_Sang_Moi;
 		}
 		
 		int get_Thoi_Gian_Sang() {
