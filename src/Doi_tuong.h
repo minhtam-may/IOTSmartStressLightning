@@ -3,17 +3,17 @@
 
 class Doi_tuong{
 	protected:
-		char ten[100];
+		string ten;
 		int so_Luong;
 	public:
 		static int tong;
 		Doi_tuong(){
-			strcpy(this->ten,"");
+			this->ten = "";
 			this->so_Luong = 0;
 		}
 		
-		void set_Doi_Tuong(char t[100], int s){
-			strcpy(t, this->ten);
+		void set_Doi_Tuong(string t, int s){
+			this->ten = t;
 			this->so_Luong = s;
 		}
 		
@@ -25,7 +25,7 @@ class Doi_tuong{
 		}
 		
 		void nhap_Doi_Tuong(){
-			cout << endl << "Ten doi tuong: "; cin.get(this->ten, 100);
+			cout << endl << "Ten doi tuong: "; getline(cin, this->ten);
 			cout << endl << "So luong: "; cin >> this->so_Luong;
 			this->tong += this->so_Luong;
 		}
